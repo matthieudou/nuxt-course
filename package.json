@@ -16,12 +16,13 @@
     "nuxt": "^1.0.0"
   },
   "devDependencies": {
-    "cross-env": "^5.0.1",
+    "autoprefixer": "^7.1.6",
     "babel-eslint": "^8.2.1",
+    "cross-env": "^5.0.1",
     "eslint": "^4.15.0",
     "eslint-loader": "^1.7.1",
     "eslint-plugin-vue": "^4.0.0",
-    "autoprefixer": "^7.1.6",
+    "pug": "^2.0.0-rc.4",
     "tailwindcss": "^0.1.3"
   }
 }

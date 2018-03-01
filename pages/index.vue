@@ -1,59 +1,27 @@
-<template>
-  <section class="container">
-    <div>
-      <logo/>
-      <h1 class="title">
-        nuxt-course
-      </h1>
-      <h2 class="subtitle">
-        Nuxt learning project
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
-        <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
-      </div>
-    </div>
-  </section>
+<template lang="pug">
+div
+  section.pt-8.text-center.h-32.intro.bg-cover.bg-center
+    h1.font-hairline.text-white Get the latest tech news!
+
+  section.p-4.container.mx-auto
+    PostPreview(postTitle="Hello" previewText="This is a simple preview" postId="1" thumbnail="https://images.pexels.com/photos/904276/pexels-photo-904276.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb")
+    PostPreview(postTitle="Other Hello" previewText="Other little preview" postId="2" thumbnail="https://images.pexels.com/photos/902204/pexels-photo-902204.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb")
+    PostPreview(postTitle="Last hello" previewText="Last little preview" postId="3" thumbnail="https://images.pexels.com/photos/460200/pexels-photo-460200.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb")
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import PostPreview from '@/components/posts/PostPreview'
 
 export default {
   components: {
-    Logo
+    PostPreview
   }
 }
 </script>
 
-<style>
-.container
-{
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.title
-{
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-.subtitle
-{
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-.links
-{
-  padding-top: 15px;
-}
+<style scoped>
+  .intro {
+    background-image: url('~assets/images/background.jpeg');
+  }
 </style>
+
